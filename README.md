@@ -2,6 +2,11 @@
 
 مشروع مسابقة **DEMI** — خدمة توصيل أطفال داخل بيئة آمنة، تبدأ عند صعود الطفل، تحميه أثناء الطريق، وتنتهي بتسليمه لشخص معتمد. المشروع مدعوم بنموذج أولي روبوتي (عربة أردوينو كيت بمستشعر وبلوتوث، مع لوحة اتصال واي فاي/إنترنت قادمة لاحقًا) يمثل حركة السيارة داخل مسار مصغّر.
 
+## روابط مباشرة (GitHub Pages)
+
+- 🖥️ [التطبيق التفاعلي](https://hozayfaelebiare.github.io/DEMI-Hozayfa-g4-uber-kids/app/)
+- 📄 [عرض المشروع (A4)](https://hozayfaelebiare.github.io/DEMI-Hozayfa-g4-uber-kids/index2.html)
+
 ## الفريق
 
 | # | الاسم | الدور |
@@ -16,6 +21,7 @@
 
 - [`src/App.tsx`](src/App.tsx) — تطبيق الويب التفاعلي (React + Vite + Tailwind CSS)، وهو المشروع الأساسي المُصمَّم عبر Figma Make.
 - [`index2.html`](index2.html) — نسخة عرض تقديمي مستقلة بصيغة صفحات A4 (يمكن فتحها مباشرة في المتصفح أو طباعتها).
+- `app/` — نسخة مبنية (production build) من `src/App.tsx` تُستخدم فقط لتشغيل الرابط المباشر على GitHub Pages. لا تُعدَّل يدويًا؛ بعد أي تعديل في `src/` يجب إعادة بنائها بـ `GITHUB_PAGES_BASE="/DEMI-Hozayfa-g4-uber-kids/app/" pnpm build` ثم نسخ محتوى `dist/` إلى `app/`.
 
 ## التشغيل محليًا
 

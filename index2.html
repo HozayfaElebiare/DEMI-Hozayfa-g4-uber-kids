@@ -54,6 +54,7 @@ p,li{font-size:14px;line-height:1.85;font-weight:700;unicode-bidi:plaintext}
 bdi{unicode-bidi:isolate}
 @media(max-width:900px){.page{margin:0 auto;box-shadow:none;transform-origin:top center}.top{margin-bottom:5mm}}
 @media print{html,body{background:#fff}.page{margin:0;box-shadow:none}}
+.team-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:6mm;margin-top:9mm;direction:rtl}.member{width:calc(33.333% - 4mm);background:#fff;border:1px solid var(--line);border-radius:7mm;padding:7mm 4mm;text-align:center;box-shadow:0 3mm 8mm rgba(7,59,116,.08)}.member .avatar{width:17mm;height:17mm;border-radius:50%;background:var(--blue);color:#fff;display:flex;align-items:center;justify-content:center;font-size:21px;font-weight:900;margin:0 auto 4mm}.member h3{font-size:16px;margin-bottom:2mm}.member .role{display:inline-block;font-size:10.5px;font-weight:800;color:var(--muted);background:#eaf8ff;padding:1.3mm 4mm;border-radius:5mm}.member.lead{border:2px solid var(--orange);box-shadow:0 4mm 10mm rgba(255,139,61,.22)}.member.lead .avatar{background:var(--orange)}.member.lead .role{background:#fff3e8;color:#c1560a}
 </style>
 </head>
 <body>
@@ -105,9 +106,22 @@ bdi{unicode-bidi:isolate}
 </div><div class="footer"><span>إعداد: حذيفة محمود</span><span>نموذج قابل للتنفيذ</span></div></section>
 
 <section class="page"><div class="layer">
+  <div class="top"><div class="logo">اطمّن</div><div class="kicker">فريق العمل</div></div>
+  <h1>الفريق الذي صنع اطمئن</h1>
+  <div class="team-grid">
+    <article class="member lead"><div class="avatar">٥</div><h3>حذيفة محمود</h3><span class="role">قائد الفريق</span></article>
+    <article class="member"><div class="avatar">١</div><h3>أحمد أحمد</h3><span class="role">عضو الفريق</span></article>
+    <article class="member"><div class="avatar">٢</div><h3>أنس حسن</h3><span class="role">عضو الفريق</span></article>
+    <article class="member"><div class="avatar">٣</div><h3>أنس محمد</h3><span class="role">عضو الفريق</span></article>
+    <article class="member"><div class="avatar">٤</div><h3>جونستا مينا</h3><span class="role">عضو الفريق</span></article>
+  </div>
+  <div class="promise">فريق واحد، هدف واحد: توصيل أطفال مصر بأمان.</div>
+</div><div class="footer"><span>إعداد: حذيفة محمود</span><span>الفريق</span></div></section>
+
+<section class="page"><div class="layer">
   <div class="top"><div class="logo">اطمّن</div><div class="kicker">تحديد المشكلة وتخطيط الحل</div></div>
   <div class="sheet-head"><strong>ورقة المشروع</strong><span>خدمة رحلة آمنة للأطفال مع تسليم موثّق</span></div>
-  <div class="meta">الفريق: أحمد أحمد، أنس حسن، أنس محمد، جونستا مينا، حذيفة محمود (قائد الفريق) &nbsp;&nbsp; | &nbsp;&nbsp; المجال: تطبيق ويب وروبوتيكس</div>
+  <div class="meta">المجال: تطبيق ويب وروبوتيكس</div>
   <div class="canvas">
     <article class="cell orange"><h3><b>١</b> المشكلة الأساسية</h3><p>لا توجد في مصر خدمة منتشرة ومتخصصة يمكن الاعتماد عليها لتوصيل الأطفال وحدهم بأمان.</p></article>
     <article class="cell orange"><h3><b>٢</b> أثر المشكلة</h3><p>يتعطل وقت ولي الأمر، وقد يفوّت الطفل المدرسة أو النادي أو الكورس أو موعدًا مهمًا.</p></article>
