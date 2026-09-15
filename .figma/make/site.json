@@ -1,0 +1,10 @@
+{
+  "description": "This web app offers a visually engaging platform for parents to explore safe transportation solutions for children, featuring informative graphics and clear explanations.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
