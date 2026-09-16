@@ -4,15 +4,11 @@
 # ---------------------------------------------------------------------------
 # Images & Graphics
 # ---------------------------------------------------------------------------
-*.png                filter=lfs diff=lfs merge=lfs -text
-*.jpg                filter=lfs diff=lfs merge=lfs -text
-*.jpeg               filter=lfs diff=lfs merge=lfs -text
-*.gif                filter=lfs diff=lfs merge=lfs -text
-*.bmp                filter=lfs diff=lfs merge=lfs -text
-*.tiff               filter=lfs diff=lfs merge=lfs -text
-*.tif                filter=lfs diff=lfs merge=lfs -text
-*.ico                filter=lfs diff=lfs merge=lfs -text
-*.webp               filter=lfs diff=lfs merge=lfs -text
+# Common web-served raster/vector formats are kept as plain git blobs, not
+# LFS: this repo is served directly by GitHub Pages, which cannot serve LFS
+# content (it returns the pointer text file instead of the real image).
+# Design-source formats (psd/ai/sketch) stay on LFS since they're never
+# served as page assets.
 *.psd                filter=lfs diff=lfs merge=lfs -text
 *.ai                 filter=lfs diff=lfs merge=lfs -text
 *.sketch             filter=lfs diff=lfs merge=lfs -text
@@ -144,9 +140,3 @@
 *.stl                filter=lfs diff=lfs merge=lfs -text
 *.nc                 filter=lfs diff=lfs merge=lfs -text
 *.mat                filter=lfs diff=lfs merge=lfs -text
-
-# ---------------------------------------------------------------------------
-# GitHub Pages build output — must stay as plain git blobs. GitHub Pages
-# cannot serve Git LFS content, so binaries under app/ are excluded from LFS.
-# ---------------------------------------------------------------------------
-app/** -filter -diff -merge -text
