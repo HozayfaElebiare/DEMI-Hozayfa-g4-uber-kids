@@ -1,9 +1,1257 @@
-<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>اطمئن — نموذج App Lab</title><style>
-*{box-sizing:border-box}html,body{margin:0;background:#dbe7ee;font-family:"Arial","Tahoma",sans-serif;color:#17324D;direction:rtl}body{min-height:100vh;display:grid;place-items:center}.screen{width:320px;height:450px;position:relative;overflow:hidden;background:url('../01_shared_assets/bg_blue.png') center/cover no-repeat}.screen h1{margin:0}.topbar{height:62px;padding:13px 14px 8px;display:flex;align-items:center;gap:8px}.topbar h1{font-size:18px;flex:1;text-align:center;color:#123A63}.spacer{width:34px}.miniLogo{font-weight:900;color:#1677E8;font-size:16px}.iconBtn{width:34px;height:34px;border:0;background:#fff;border-radius:11px;padding:3px;box-shadow:0 4px 12px #123a631c}.ico{width:34px;height:34px;object-fit:contain}.tiny{width:22px;height:22px;vertical-align:middle}.logoIcon{width:64px;height:64px}.bigIcon{width:54px;height:54px}.content{padding:6px 16px 64px}.content.compact{padding-top:2px}.center{text-align:center}.primary,.secondary,.textBtn{width:100%;border:0;border-radius:15px;font-weight:800;font-size:14px;min-height:43px;display:flex;align-items:center;justify-content:center;gap:7px;font-family:inherit}.primary{background:#1677E8;color:#fff;box-shadow:0 7px 0 #0d58aa;margin-top:11px}.primary.orange{background:#FF9B32;box-shadow:0 7px 0 #d87513}.primary.green{background:#27B96D;box-shadow:0 7px 0 #168449}.secondary{background:#fff;color:#1677E8;border:1.5px solid #cfe8f5;margin-top:10px}.secondary.danger{color:#F75C65;border-color:#ffd1d4}.textBtn{background:transparent;color:#1677E8;min-height:28px}.bottomNav{position:absolute;bottom:0;left:0;right:0;height:58px;background:#fff;display:flex;box-shadow:0 -5px 20px #123a6317;padding:4px 10px}.bottomNav button{flex:1;border:0;background:transparent;color:#7890a5;font-family:inherit;font-size:10px;font-weight:700;display:flex;flex-direction:column;align-items:center;justify-content:center}.bottomNav .ico{width:28px;height:28px}.bottomNav button.active{color:#1677E8}.welcome{background:#0b416c}.welcomeArt{width:100%;height:100%;object-fit:cover}.welcomeShade{position:absolute;inset:0;background:linear-gradient(180deg,#0d315a0a 25%,#0a325de8 72%,#082f56 100%)}.welcomeCopy{position:absolute;left:18px;right:18px;bottom:22px;color:#fff;text-align:center}.brandBig{font-size:32px;font-weight:900}.welcomeCopy h1{font-size:24px;margin:2px 0}.welcomeCopy p{font-size:14px;margin:4px 0 12px}.welcomeCopy small{display:block;margin-top:15px;color:#d9edff}.childCard{height:67px;background:#fff;border-radius:17px;padding:9px 11px;display:flex;gap:9px;align-items:center;box-shadow:0 5px 18px #123a6317}.childCard .avatar{width:45px;height:45px;border-radius:50%;background:#FFD84D;display:grid;place-items:center;font-size:20px;font-weight:900;color:#123A63}.childCard div:nth-child(2){flex:1;display:flex;flex-direction:column}.childCard b{font-size:14px}.childCard span{font-size:11px;color:#6f8598}.nextTrip{margin-top:12px;background:#fff;border-radius:18px;padding:13px;box-shadow:0 5px 18px #123a6317}.routeLine{display:flex;align-items:center;gap:5px;font-size:11px}.dot{width:12px;height:12px;border-radius:50%}.homeDot{background:#FF9B32}.schoolDot{background:#1677E8}.line{height:3px;background:#bfe2f6;flex:1;border-radius:4px}.tripMeta{display:flex;justify-content:space-between;margin:13px 0 9px;font-size:11px}.tripMeta span{display:flex;align-items:center;gap:3px}.safePill{background:#e5f9ef;color:#14834a;border-radius:10px;padding:7px;font-size:11px;font-weight:800;text-align:center}.tip{margin-top:10px;background:#fff6d9;border:1px dashed #f4b62f;border-radius:12px;padding:8px;font-size:10px;text-align:center;color:#76550a}.label{display:block;font-size:12px;font-weight:900;margin:4px 0 8px;color:#123A63;text-align:right}.label.full{width:100%}.choices{display:flex;gap:7px}.choice{flex:1;height:79px;border:1.5px solid #d3e9f4;background:#fff;border-radius:15px;font-family:inherit;color:#17324D;font-weight:800;display:flex;flex-direction:column;align-items:center;justify-content:center}.choice .ico{width:39px;height:39px}.choice.selected{border:2px solid #1677E8;background:#eef8ff}.inputMock{height:43px;background:#fff;border:1.5px solid #d3e9f4;border-radius:13px;display:flex;align-items:center;gap:7px;padding:0 11px;font-size:13px}.switchRow{margin-top:10px;background:#fff;border-radius:15px;padding:8px 9px;display:flex;align-items:center;gap:7px}.switchRow div:nth-child(2){flex:1;display:flex;flex-direction:column;text-align:right}.switchRow b{font-size:12px}.switchRow span{font-size:10px;color:#7890a5}.switch{width:42px;height:24px;border-radius:20px;background:#b7d0dd;position:relative}.switch:after{content:'';position:absolute;width:18px;height:18px;background:#fff;border-radius:50%;top:3px;right:3px}.switch.on{background:#27B96D}.price{margin-top:9px;background:#fff6db;border-radius:13px;padding:9px 11px;display:flex;justify-content:space-between;font-size:12px}.price b{color:#178d52;font-size:15px}.price s{color:#9aabb8;font-size:11px}.summary{display:grid;grid-template-columns:1fr 1fr;gap:7px}.summary div{background:#fff;border-radius:14px;padding:8px;display:grid;grid-template-columns:32px 1fr;grid-template-rows:auto auto}.summary div:last-child{grid-column:1/3}.summary .ico{grid-row:1/3;width:30px;height:30px}.summary span{font-size:9px;color:#7890a5}.summary b{font-size:11px}.safetyList{list-style:none;margin:0;padding:0;background:#fff;border-radius:15px}.safetyList li{display:flex;align-items:center;gap:6px;padding:7px 9px;border-bottom:1px solid #edf4f7;font-size:11px}.safetyList li:last-child{border:0}.safetyList b{margin-right:auto;color:#27B96D}.otpCard{background:#fff;border-radius:20px;padding:12px;box-shadow:0 6px 20px #123a6315}.otpCard span,.otpCard small{display:block}.otpCard span{font-size:12px;font-weight:800}.otpCard strong{display:block;font-size:38px;letter-spacing:10px;color:#1677E8;direction:ltr;margin:4px 0}.otpCard small{font-size:9px;color:#7890a5}.driverCard{margin-top:10px;background:#fff;border-radius:15px;padding:9px;display:flex;align-items:center;gap:8px;text-align:right}.driverCard div{display:flex;flex-direction:column}.driverCard b{font-size:12px}.driverCard span{font-size:10px;color:#547084}.arrived{background:#e5f9ef;color:#14834a;border-radius:11px;padding:8px;margin-top:10px;font-weight:900;font-size:11px}.mapCard{height:155px;background:#d9f3dc;border-radius:19px;position:relative;overflow:hidden;border:4px solid #fff;box-shadow:0 5px 18px #123a6317}.road{position:absolute;background:#fff;border:8px solid #d0d8dd;border-radius:80px}.road1{width:290px;height:62px;transform:rotate(-17deg);left:1px;top:48px}.road2{width:200px;height:55px;transform:rotate(56deg);left:54px;top:47px}.mapHome,.mapSchool{position:absolute;font-size:28px;z-index:2}.mapHome{right:14px;bottom:12px}.mapSchool{left:15px;top:12px}.carPin{position:absolute;left:135px;top:59px;z-index:3}.carPin .ico{width:45px;height:45px}.progressText{margin:8px 0;background:#fff;border-radius:13px;padding:8px 10px;display:flex;flex-direction:column}.progressText b{font-size:12px}.progressText span{font-size:10px;color:#6f8598}.statusRow{display:flex;gap:6px}.statusRow div{flex:1;background:#fff;border-radius:12px;padding:6px 3px;text-align:center}.statusRow .ico{width:29px;height:29px}.statusRow span,.statusRow b{display:block;font-size:9px}.statusRow b{color:#27B96D}.actions{display:flex;gap:7px}.actions .secondary{margin-top:8px}.handoffArt,.robotArt{width:100%;height:118px;object-fit:cover;border-radius:18px;border:4px solid #fff}.receiverBox{width:100%;margin-top:7px;background:#fff;border-radius:14px;padding:7px;display:flex;align-items:center;gap:7px;text-align:right}.receiverBox div{display:flex;flex-direction:column}.receiverBox span,.receiverBox small{font-size:9px;color:#6f8598}.receiverBox b{font-size:12px}.codeBoxes{display:flex;gap:8px;direction:ltr;justify-content:center}.codeBoxes span{width:44px;height:45px;background:#fff;border:2px solid #cce6f4;border-radius:12px;display:grid;place-items:center;font-size:21px;font-weight:900;color:#1677E8}.complete{background:url('../01_shared_assets/bg_green.png') center/cover}.completeContent{padding-top:38px}.successIcon{width:90px;height:90px}.complete h1{font-size:24px;color:#123A63;margin-top:6px}.complete p{font-size:12px}.receipt{background:#fff;border-radius:18px;padding:4px 11px;margin:14px 0}.receipt div{height:43px;display:flex;align-items:center;gap:6px;border-bottom:1px solid #edf4f7;font-size:10px}.receipt div:last-child{border:0}.receipt span{flex:1;text-align:right}.receipt b{font-size:11px}.proof{background:#e5f9ef;color:#13814a;border-radius:12px;padding:8px;font-size:10px;font-weight:800}.robotArt{height:126px}.robotStatus{width:100%;background:#fff;border-radius:14px;padding:8px;display:flex;align-items:center;gap:8px;text-align:right;margin-top:7px}.robotStatus div{display:flex;flex-direction:column}.robotStatus b{font-size:11px}.robotStatus small{font-size:9px;color:#6f8598}.pulse{width:12px;height:12px;background:#27B96D;border-radius:50%;box-shadow:0 0 0 5px #27b96d24}.mission{display:flex;width:100%;gap:7px;margin-top:7px}.mission div{flex:1;background:#fff;border-radius:12px;padding:7px}.mission span,.mission b{display:block}.mission span{font-size:9px;color:#6f8598}.mission b{font-size:10px}.robotBtns{display:flex;gap:5px;margin-top:8px}.robotBtns button{flex:1;border:0;background:#fff;border-radius:10px;font-family:inherit;font-weight:800;font-size:9px;display:flex;align-items:center;justify-content:center;padding:5px 2px}.robotHint{margin-top:7px;background:#fff6db;border-radius:10px;padding:6px;font-size:9px}.brandBig,.topbar h1,.primary,b,strong{letter-spacing:0}
-.mapHome,.mapSchool{font-size:0;width:38px;height:38px;background-size:contain;background-repeat:no-repeat}.mapHome{background-image:url('../01_shared_assets/icon_home.png')}.mapSchool{background-image:url('../01_shared_assets/icon_school.png')}.textBtn{display:none}</style></head><body><section class="screen welcome" id="welcomeScreen"><img class="welcomeArt" src="../01_shared_assets/hero_car.png"><div class="welcomeShade"></div><div class="welcomeCopy"><img class="logoIcon" src="../01_shared_assets/icon_logo_shield.png" alt=""><div class="brandBig">اطمّن</div><h1>رحلة طفلك… بأمان</h1><p>من الباب إلى الشخص الموثوق</p><button class="primary orange" data-nav="homeScreen">ابدأ الآن <img class="tiny" src="../01_shared_assets/icon_forward.png" alt=""></button><small>نموذج أولي لمسابقة DEMI</small></div></section><section class="screen" id="homeScreen"><div class="topbar"><span class="miniLogo">اطمّن</span><h1>مرحبًا يا ولي الأمر</h1><span class="spacer"></span></div><div class="content"><div class="childCard"><div class="avatar">ح</div><div><b>حذيفة محمود</b><span>الرحلة القادمة اليوم</span></div><img class="ico" src="../01_shared_assets/icon_car.png" alt=""></div><div class="nextTrip"><div class="routeLine"><span class="dot homeDot"></span><b>المنزل</b><span class="line"></span><span class="dot schoolDot"></span><b>المدرسة</b></div><div class="tripMeta"><span><img class="tiny" src="../01_shared_assets/icon_clock.png" alt=""> ٧:٣٠ ص</span><span><img class="tiny" src="../01_shared_assets/icon_pin.png" alt=""> مدينة نصر</span></div><div class="safePill">السيارة والسائق موثّقان ✓</div></div><button class="primary" data-nav="bookScreen"><img class="tiny" src="../01_shared_assets/icon_booking.png" alt=""> حجز رحلة جديدة</button><button class="secondary" data-nav="robotScreen"><img class="tiny" src="../01_shared_assets/icon_robot.png" alt=""> تجربة النموذج الروبوتي</button><div class="tip">رحلتك لا تنتهي إلا بعد تسليم الطفل لشخص معتمد.</div></div><div class="bottomNav"><button data-nav="homeScreen" class="active"><img class="ico" src="../01_shared_assets/icon_home.png" alt=""><span>الرئيسية</span></button><button data-nav="bookScreen" class=""><img class="ico" src="../01_shared_assets/icon_booking.png" alt=""><span>حجز</span></button><button data-nav="robotScreen" class=""><img class="ico" src="../01_shared_assets/icon_robot.png" alt=""><span>الروبوت</span></button></div></section><section class="screen" id="bookScreen"><div class="topbar"><button class="iconBtn" data-nav="homeScreen"><img class="ico" src="../01_shared_assets/icon_back.png" alt=""></button><h1>حجز رحلة جديدة</h1><span class="spacer"></span></div><div class="content compact"><label class="label">اختر الوجهة</label><div class="choices"><button class="choice selected" data-place="المدرسة"><img class="ico" src="../01_shared_assets/icon_school.png" alt=""><span>المدرسة</span></button><button class="choice" data-place="النادي"><img class="ico" src="../01_shared_assets/icon_club.png" alt=""><span>النادي</span></button><button class="choice" data-place="الكورس"><img class="ico" src="../01_shared_assets/icon_course.png" alt=""><span>الكورس</span></button></div><label class="label">من سيستلم الطفل؟</label><div class="inputMock"><img class="tiny" src="../01_shared_assets/icon_receiver.png" alt=""> <span id="receiverPreview">المعلمة منى</span></div><div class="switchRow"><img class="ico" src="../01_shared_assets/icon_group.png" alt=""><div><b>رحلة مشتركة</b><span>تقاسم الأجرة مع طفل آخر</span></div><div class="switch on"></div></div><div class="price"><span>التكلفة المتوقعة</span><b><s>١٢٠ ج</s> ٦٠ ج</b></div><button class="primary" data-nav="confirmScreen">متابعة <img class="tiny" src="../01_shared_assets/icon_forward.png" alt=""></button></div><div class="bottomNav"><button data-nav="homeScreen" class=""><img class="ico" src="../01_shared_assets/icon_home.png" alt=""><span>الرئيسية</span></button><button data-nav="bookScreen" class="active"><img class="ico" src="../01_shared_assets/icon_booking.png" alt=""><span>حجز</span></button><button data-nav="robotScreen" class=""><img class="ico" src="../01_shared_assets/icon_robot.png" alt=""><span>الروبوت</span></button></div></section><section class="screen" id="confirmScreen"><div class="topbar"><button class="iconBtn" data-nav="homeScreen"><img class="ico" src="../01_shared_assets/icon_back.png" alt=""></button><h1>مراجعة الحجز</h1><span class="spacer"></span></div><div class="content compact"><div class="summary"><div><img class="ico" src="../01_shared_assets/icon_pin.png" alt=""><span>من المنزل</span><b>إلى المدرسة</b></div><div><img class="ico" src="../01_shared_assets/icon_receiver.png" alt=""><span>المستلم</span><b>المعلمة منى</b></div><div><img class="ico" src="../01_shared_assets/icon_group.png" alt=""><span>نوع الرحلة</span><b>مشتركة — ٦٠ ج</b></div></div><label class="label">الأمان في الرحلة</label><ul class="safetyList"><li><img class="tiny" src="../01_shared_assets/icon_gps.png" alt=""> تتبع مباشر للموقع <b>✓</b></li><li><img class="tiny" src="../01_shared_assets/icon_camera.png" alt=""> كاميرا داخل السيارة <b>✓</b></li><li><img class="tiny" src="../01_shared_assets/icon_otp.png" alt=""> رمز للصعود والتسليم <b>✓</b></li></ul><button class="primary green" data-nav="pickupScreen"><img class="tiny" src="../01_shared_assets/icon_check.png" alt=""> تأكيد الحجز</button><button class="textBtn" data-nav="bookScreen">تعديل البيانات</button></div></section><section class="screen" id="pickupScreen"><div class="topbar"><button class="iconBtn" data-nav="homeScreen"><img class="ico" src="../01_shared_assets/icon_back.png" alt=""></button><h1>صعود الطفل بأمان</h1><span class="spacer"></span></div><div class="content compact center"><div class="otpCard"><img class="bigIcon" src="../01_shared_assets/icon_otp.png" alt=""><span>رمز صعود الطفل</span><strong>٤٨٢٧</strong><small>يُظهر للسائق فقط عند الوصول</small></div><div class="driverCard"><img class="ico" src="../01_shared_assets/icon_car.png" alt=""><div><b>السيارة: أ ب ج ١٢٣</b><span>السائق: أحمد — موثّق ✓</span></div></div><div class="arrived">السيارة وصلت أمام المنزل</div><button class="primary" data-nav="trackingScreen"><img class="tiny" src="../01_shared_assets/icon_play.png" alt=""> بدأ الطفل الرحلة</button></div></section><section class="screen" id="trackingScreen"><div class="topbar"><button class="iconBtn" data-nav="homeScreen"><img class="ico" src="../01_shared_assets/icon_back.png" alt=""></button><h1>الرحلة الآن</h1><span class="spacer"></span></div><div class="content compact"><div class="mapCard"><div class="road road1"></div><div class="road road2"></div><span class="mapHome">🏠</span><span class="mapSchool">🏫</span><span class="carPin"><img class="ico" src="../01_shared_assets/icon_car.png" alt=""></span><div class="routeDots"></div></div><div class="progressText"><b>الطفل في الطريق إلى المدرسة</b><span>متبقي تقريبًا ١٢ دقيقة</span></div><div class="statusRow"><div><img class="ico" src="../01_shared_assets/icon_gps.png" alt=""><span>GPS</span><b>يعمل</b></div><div><img class="ico" src="../01_shared_assets/icon_camera.png" alt=""><span>الكاميرا</span><b>تعمل</b></div><div><img class="ico" src="../01_shared_assets/icon_navigation.png" alt=""><span>المسار</span><b>صحيح</b></div></div><button class="primary green" data-nav="handoffScreen">وصلنا إلى الوجهة</button><div class="actions"><button class="secondary danger"><img class="tiny" src="../01_shared_assets/icon_phone.png" alt=""> طوارئ</button><button class="secondary" data-nav="robotScreen"><img class="tiny" src="../01_shared_assets/icon_robot.png" alt=""> الروبوت</button></div></div></section><section class="screen" id="handoffScreen"><div class="topbar"><button class="iconBtn" data-nav="homeScreen"><img class="ico" src="../01_shared_assets/icon_back.png" alt=""></button><h1>تسليم الطفل</h1><span class="spacer"></span></div><div class="content compact center"><img class="handoffArt" src="../01_shared_assets/handoff_scene.png"><div class="receiverBox"><img class="ico" src="../01_shared_assets/icon_receiver.png" alt=""><div><span>المستلم المعتمد</span><b>المعلمة منى</b><small>داخل نطاق المدرسة ✓</small></div></div><label class="label full">أدخل رمز التسليم</label><div class="codeBoxes"><span>٧</span><span>٣</span><span>١</span><span>٩</span></div><button class="primary green" data-nav="completeScreen"><img class="tiny" src="../01_shared_assets/icon_check.png" alt=""> تأكيد التسليم</button></div></section><section class="screen complete" id="completeScreen"><div class="content center completeContent"><img class="successIcon" src="../01_shared_assets/icon_check.png" alt=""><h1>تمت الرحلة بأمان</h1><p>تم تسليم حذيفة إلى المعلمة منى</p><div class="receipt"><div><img class="tiny" src="../01_shared_assets/icon_clock.png" alt=""><span>وقت التسليم</span><b>٨:٠٢ ص</b></div><div><img class="tiny" src="../01_shared_assets/icon_receiver.png" alt=""><span>المستلم</span><b>المعلمة منى</b></div><div><img class="tiny" src="../01_shared_assets/icon_wallet.png" alt=""><span>التكلفة</span><b>٦٠ جنيهًا</b></div></div><div class="proof">تم إرسال إثبات التسليم لولي الأمر ✓</div><button class="primary" data-nav="homeScreen"><img class="tiny" src="../01_shared_assets/icon_home.png" alt=""> العودة للرئيسية</button></div></section><section class="screen" id="robotScreen"><div class="topbar"><button class="iconBtn" data-nav="homeScreen"><img class="ico" src="../01_shared_assets/icon_back.png" alt=""></button><h1>النموذج الروبوتي</h1><span class="spacer"></span></div><div class="content compact center"><img class="robotArt" src="../01_shared_assets/robot_scene.png"><div class="robotStatus"><span class="pulse"></span><div><b>السيارة الروبوت متصلة</b><small>ESP32 — جاهزة لتنفيذ المهمة</small></div></div><div class="mission"><div><span>المهمة</span><b>تحرك إلى بوابة المدرسة</b></div><div><span>الحساس</span><b id="sensorState">لا يوجد عائق</b></div></div><button class="primary green" id="startRobot"><img class="tiny" src="../01_shared_assets/icon_play.png" alt=""> بدء المهمة</button><div class="robotBtns"><button><img class="tiny" src="../01_shared_assets/icon_pause.png" alt=""> توقف</button><button><img class="tiny" src="../01_shared_assets/icon_reset.png" alt=""> إعادة</button><button><img class="tiny" src="../01_shared_assets/icon_obstacle.png" alt=""> اختبار عائق</button></div><div class="robotHint">في العرض: يرسل التطبيق المهمة، تتحرك السيارة، وتتوقف تلقائيًا أمام العائق.</div></div><div class="bottomNav"><button data-nav="homeScreen" class=""><img class="ico" src="../01_shared_assets/icon_home.png" alt=""><span>الرئيسية</span></button><button data-nav="bookScreen" class=""><img class="ico" src="../01_shared_assets/icon_booking.png" alt=""><span>حجز</span></button><button data-nav="robotScreen" class="active"><img class="ico" src="../01_shared_assets/icon_robot.png" alt=""><span>الروبوت</span></button></div></section><script>
-  const wanted=new URLSearchParams(location.search).get('screen')||'welcomeScreen';
-  document.querySelectorAll('.screen').forEach(s=>s.style.display=s.id===wanted?'block':'none');
-  document.querySelectorAll('[data-nav]').forEach(b=>b.onclick=()=>{const id=b.dataset.nav;document.querySelectorAll('.screen').forEach(s=>s.style.display=s.id===id?'block':'none');history.replaceState(null,'','?screen='+id)});
-  document.querySelectorAll('[data-place]').forEach(b=>b.onclick=()=>{document.querySelectorAll('[data-place]').forEach(x=>x.classList.remove('selected'));b.classList.add('selected')});
-  const sr=document.getElementById('startRobot');if(sr)sr.onclick=()=>{document.getElementById('sensorState').textContent='المهمة بدأت ✓';sr.textContent='السيارة تتحرك الآن'};
-  </script></body></html>
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>اطمئن — نموذج App Lab</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        background: #dbe7ee;
+        font-family: "Arial", "Tahoma", sans-serif;
+        color: #17324d;
+        direction: rtl;
+      }
+      body {
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+      }
+      .screen {
+        width: 320px;
+        height: 450px;
+        position: relative;
+        overflow: hidden;
+        background: url("../01_shared_assets/bg_blue.png") center/cover
+          no-repeat;
+      }
+      .screen h1 {
+        margin: 0;
+      }
+      .topbar {
+        height: 62px;
+        padding: 13px 14px 8px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .topbar h1 {
+        font-size: 18px;
+        flex: 1;
+        text-align: center;
+        color: #123a63;
+      }
+      .spacer {
+        width: 34px;
+      }
+      .miniLogo {
+        font-weight: 900;
+        color: #1677e8;
+        font-size: 16px;
+      }
+      .iconBtn {
+        width: 34px;
+        height: 34px;
+        border: 0;
+        background: #fff;
+        border-radius: 11px;
+        padding: 3px;
+        box-shadow: 0 4px 12px #123a631c;
+      }
+      .ico {
+        width: 34px;
+        height: 34px;
+        object-fit: contain;
+      }
+      .tiny {
+        width: 22px;
+        height: 22px;
+        vertical-align: middle;
+      }
+      .logoIcon {
+        width: 64px;
+        height: 64px;
+      }
+      .bigIcon {
+        width: 54px;
+        height: 54px;
+      }
+      .content {
+        padding: 6px 16px 64px;
+      }
+      .content.compact {
+        padding-top: 2px;
+      }
+      .center {
+        text-align: center;
+      }
+      .primary,
+      .secondary,
+      .textBtn {
+        width: 100%;
+        border: 0;
+        border-radius: 15px;
+        font-weight: 800;
+        font-size: 14px;
+        min-height: 43px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 7px;
+        font-family: inherit;
+      }
+      .primary {
+        background: #1677e8;
+        color: #fff;
+        box-shadow: 0 7px 0 #0d58aa;
+        margin-top: 11px;
+      }
+      .primary.orange {
+        background: #ff9b32;
+        box-shadow: 0 7px 0 #d87513;
+      }
+      .primary.green {
+        background: #27b96d;
+        box-shadow: 0 7px 0 #168449;
+      }
+      .secondary {
+        background: #fff;
+        color: #1677e8;
+        border: 1.5px solid #cfe8f5;
+        margin-top: 10px;
+      }
+      .secondary.danger {
+        color: #f75c65;
+        border-color: #ffd1d4;
+      }
+      .textBtn {
+        background: transparent;
+        color: #1677e8;
+        min-height: 28px;
+      }
+      .bottomNav {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 58px;
+        background: #fff;
+        display: flex;
+        box-shadow: 0 -5px 20px #123a6317;
+        padding: 4px 10px;
+      }
+      .bottomNav button {
+        flex: 1;
+        border: 0;
+        background: transparent;
+        color: #7890a5;
+        font-family: inherit;
+        font-size: 10px;
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .bottomNav .ico {
+        width: 28px;
+        height: 28px;
+      }
+      .bottomNav button.active {
+        color: #1677e8;
+      }
+      .welcome {
+        background: #0b416c;
+      }
+      .welcomeArt {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .welcomeShade {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          180deg,
+          #0d315a0a 25%,
+          #0a325de8 72%,
+          #082f56 100%
+        );
+      }
+      .welcomeCopy {
+        position: absolute;
+        left: 18px;
+        right: 18px;
+        bottom: 22px;
+        color: #fff;
+        text-align: center;
+      }
+      .brandBig {
+        font-size: 32px;
+        font-weight: 900;
+      }
+      .welcomeCopy h1 {
+        font-size: 24px;
+        margin: 2px 0;
+      }
+      .welcomeCopy p {
+        font-size: 14px;
+        margin: 4px 0 12px;
+      }
+      .welcomeCopy small {
+        display: block;
+        margin-top: 15px;
+        color: #d9edff;
+      }
+      .childCard {
+        height: 67px;
+        background: #fff;
+        border-radius: 17px;
+        padding: 9px 11px;
+        display: flex;
+        gap: 9px;
+        align-items: center;
+        box-shadow: 0 5px 18px #123a6317;
+      }
+      .childCard .avatar {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background: #ffd84d;
+        display: grid;
+        place-items: center;
+        font-size: 20px;
+        font-weight: 900;
+        color: #123a63;
+      }
+      .childCard div:nth-child(2) {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+      }
+      .childCard b {
+        font-size: 14px;
+      }
+      .childCard span {
+        font-size: 11px;
+        color: #6f8598;
+      }
+      .nextTrip {
+        margin-top: 12px;
+        background: #fff;
+        border-radius: 18px;
+        padding: 13px;
+        box-shadow: 0 5px 18px #123a6317;
+      }
+      .routeLine {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 11px;
+      }
+      .dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+      }
+      .homeDot {
+        background: #ff9b32;
+      }
+      .schoolDot {
+        background: #1677e8;
+      }
+      .line {
+        height: 3px;
+        background: #bfe2f6;
+        flex: 1;
+        border-radius: 4px;
+      }
+      .tripMeta {
+        display: flex;
+        justify-content: space-between;
+        margin: 13px 0 9px;
+        font-size: 11px;
+      }
+      .tripMeta span {
+        display: flex;
+        align-items: center;
+        gap: 3px;
+      }
+      .safePill {
+        background: #e5f9ef;
+        color: #14834a;
+        border-radius: 10px;
+        padding: 7px;
+        font-size: 11px;
+        font-weight: 800;
+        text-align: center;
+      }
+      .tip {
+        margin-top: 10px;
+        background: #fff6d9;
+        border: 1px dashed #f4b62f;
+        border-radius: 12px;
+        padding: 8px;
+        font-size: 10px;
+        text-align: center;
+        color: #76550a;
+      }
+      .label {
+        display: block;
+        font-size: 12px;
+        font-weight: 900;
+        margin: 4px 0 8px;
+        color: #123a63;
+        text-align: right;
+      }
+      .label.full {
+        width: 100%;
+      }
+      .choices {
+        display: flex;
+        gap: 7px;
+      }
+      .choice {
+        flex: 1;
+        height: 79px;
+        border: 1.5px solid #d3e9f4;
+        background: #fff;
+        border-radius: 15px;
+        font-family: inherit;
+        color: #17324d;
+        font-weight: 800;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .choice .ico {
+        width: 39px;
+        height: 39px;
+      }
+      .choice.selected {
+        border: 2px solid #1677e8;
+        background: #eef8ff;
+      }
+      .inputMock {
+        height: 43px;
+        background: #fff;
+        border: 1.5px solid #d3e9f4;
+        border-radius: 13px;
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        padding: 0 11px;
+        font-size: 13px;
+      }
+      .switchRow {
+        margin-top: 10px;
+        background: #fff;
+        border-radius: 15px;
+        padding: 8px 9px;
+        display: flex;
+        align-items: center;
+        gap: 7px;
+      }
+      .switchRow div:nth-child(2) {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+      }
+      .switchRow b {
+        font-size: 12px;
+      }
+      .switchRow span {
+        font-size: 10px;
+        color: #7890a5;
+      }
+      .switch {
+        width: 42px;
+        height: 24px;
+        border-radius: 20px;
+        background: #b7d0dd;
+        position: relative;
+      }
+      .switch:after {
+        content: "";
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        background: #fff;
+        border-radius: 50%;
+        top: 3px;
+        right: 3px;
+      }
+      .switch.on {
+        background: #27b96d;
+      }
+      .price {
+        margin-top: 9px;
+        background: #fff6db;
+        border-radius: 13px;
+        padding: 9px 11px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+      }
+      .price b {
+        color: #178d52;
+        font-size: 15px;
+      }
+      .price s {
+        color: #9aabb8;
+        font-size: 11px;
+      }
+      .summary {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 7px;
+      }
+      .summary div {
+        background: #fff;
+        border-radius: 14px;
+        padding: 8px;
+        display: grid;
+        grid-template-columns: 32px 1fr;
+        grid-template-rows: auto auto;
+      }
+      .summary div:last-child {
+        grid-column: 1/3;
+      }
+      .summary .ico {
+        grid-row: 1/3;
+        width: 30px;
+        height: 30px;
+      }
+      .summary span {
+        font-size: 9px;
+        color: #7890a5;
+      }
+      .summary b {
+        font-size: 11px;
+      }
+      .safetyList {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        background: #fff;
+        border-radius: 15px;
+      }
+      .safetyList li {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        padding: 7px 9px;
+        border-bottom: 1px solid #edf4f7;
+        font-size: 11px;
+      }
+      .safetyList li:last-child {
+        border: 0;
+      }
+      .safetyList b {
+        margin-right: auto;
+        color: #27b96d;
+      }
+      .otpCard {
+        background: #fff;
+        border-radius: 20px;
+        padding: 12px;
+        box-shadow: 0 6px 20px #123a6315;
+      }
+      .otpCard span,
+      .otpCard small {
+        display: block;
+      }
+      .otpCard span {
+        font-size: 12px;
+        font-weight: 800;
+      }
+      .otpCard strong {
+        display: block;
+        font-size: 38px;
+        letter-spacing: 10px;
+        color: #1677e8;
+        direction: ltr;
+        margin: 4px 0;
+      }
+      .otpCard small {
+        font-size: 9px;
+        color: #7890a5;
+      }
+      .driverCard {
+        margin-top: 10px;
+        background: #fff;
+        border-radius: 15px;
+        padding: 9px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        text-align: right;
+      }
+      .driverCard div {
+        display: flex;
+        flex-direction: column;
+      }
+      .driverCard b {
+        font-size: 12px;
+      }
+      .driverCard span {
+        font-size: 10px;
+        color: #547084;
+      }
+      .arrived {
+        background: #e5f9ef;
+        color: #14834a;
+        border-radius: 11px;
+        padding: 8px;
+        margin-top: 10px;
+        font-weight: 900;
+        font-size: 11px;
+      }
+      .mapCard {
+        height: 155px;
+        background: #d9f3dc;
+        border-radius: 19px;
+        position: relative;
+        overflow: hidden;
+        border: 4px solid #fff;
+        box-shadow: 0 5px 18px #123a6317;
+      }
+      .road {
+        position: absolute;
+        background: #fff;
+        border: 8px solid #d0d8dd;
+        border-radius: 80px;
+      }
+      .road1 {
+        width: 290px;
+        height: 62px;
+        transform: rotate(-17deg);
+        left: 1px;
+        top: 48px;
+      }
+      .road2 {
+        width: 200px;
+        height: 55px;
+        transform: rotate(56deg);
+        left: 54px;
+        top: 47px;
+      }
+      .mapHome,
+      .mapSchool {
+        position: absolute;
+        font-size: 28px;
+        z-index: 2;
+      }
+      .mapHome {
+        right: 14px;
+        bottom: 12px;
+      }
+      .mapSchool {
+        left: 15px;
+        top: 12px;
+      }
+      .carPin {
+        position: absolute;
+        left: 135px;
+        top: 59px;
+        z-index: 3;
+      }
+      .carPin .ico {
+        width: 45px;
+        height: 45px;
+      }
+      .progressText {
+        margin: 8px 0;
+        background: #fff;
+        border-radius: 13px;
+        padding: 8px 10px;
+        display: flex;
+        flex-direction: column;
+      }
+      .progressText b {
+        font-size: 12px;
+      }
+      .progressText span {
+        font-size: 10px;
+        color: #6f8598;
+      }
+      .statusRow {
+        display: flex;
+        gap: 6px;
+      }
+      .statusRow div {
+        flex: 1;
+        background: #fff;
+        border-radius: 12px;
+        padding: 6px 3px;
+        text-align: center;
+      }
+      .statusRow .ico {
+        width: 29px;
+        height: 29px;
+      }
+      .statusRow span,
+      .statusRow b {
+        display: block;
+        font-size: 9px;
+      }
+      .statusRow b {
+        color: #27b96d;
+      }
+      .actions {
+        display: flex;
+        gap: 7px;
+      }
+      .actions .secondary {
+        margin-top: 8px;
+      }
+      .handoffArt,
+      .robotArt {
+        width: 100%;
+        height: 118px;
+        object-fit: cover;
+        border-radius: 18px;
+        border: 4px solid #fff;
+      }
+      .receiverBox {
+        width: 100%;
+        margin-top: 7px;
+        background: #fff;
+        border-radius: 14px;
+        padding: 7px;
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        text-align: right;
+      }
+      .receiverBox div {
+        display: flex;
+        flex-direction: column;
+      }
+      .receiverBox span,
+      .receiverBox small {
+        font-size: 9px;
+        color: #6f8598;
+      }
+      .receiverBox b {
+        font-size: 12px;
+      }
+      .codeBoxes {
+        display: flex;
+        gap: 8px;
+        direction: ltr;
+        justify-content: center;
+      }
+      .codeBoxes span {
+        width: 44px;
+        height: 45px;
+        background: #fff;
+        border: 2px solid #cce6f4;
+        border-radius: 12px;
+        display: grid;
+        place-items: center;
+        font-size: 21px;
+        font-weight: 900;
+        color: #1677e8;
+      }
+      .complete {
+        background: url("../01_shared_assets/bg_green.png") center/cover;
+      }
+      .completeContent {
+        padding-top: 38px;
+      }
+      .successIcon {
+        width: 90px;
+        height: 90px;
+      }
+      .complete h1 {
+        font-size: 24px;
+        color: #123a63;
+        margin-top: 6px;
+      }
+      .complete p {
+        font-size: 12px;
+      }
+      .receipt {
+        background: #fff;
+        border-radius: 18px;
+        padding: 4px 11px;
+        margin: 14px 0;
+      }
+      .receipt div {
+        height: 43px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        border-bottom: 1px solid #edf4f7;
+        font-size: 10px;
+      }
+      .receipt div:last-child {
+        border: 0;
+      }
+      .receipt span {
+        flex: 1;
+        text-align: right;
+      }
+      .receipt b {
+        font-size: 11px;
+      }
+      .proof {
+        background: #e5f9ef;
+        color: #13814a;
+        border-radius: 12px;
+        padding: 8px;
+        font-size: 10px;
+        font-weight: 800;
+      }
+      .robotArt {
+        height: 126px;
+      }
+      .robotStatus {
+        width: 100%;
+        background: #fff;
+        border-radius: 14px;
+        padding: 8px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        text-align: right;
+        margin-top: 7px;
+      }
+      .robotStatus div {
+        display: flex;
+        flex-direction: column;
+      }
+      .robotStatus b {
+        font-size: 11px;
+      }
+      .robotStatus small {
+        font-size: 9px;
+        color: #6f8598;
+      }
+      .pulse {
+        width: 12px;
+        height: 12px;
+        background: #27b96d;
+        border-radius: 50%;
+        box-shadow: 0 0 0 5px #27b96d24;
+      }
+      .mission {
+        display: flex;
+        width: 100%;
+        gap: 7px;
+        margin-top: 7px;
+      }
+      .mission div {
+        flex: 1;
+        background: #fff;
+        border-radius: 12px;
+        padding: 7px;
+      }
+      .mission span,
+      .mission b {
+        display: block;
+      }
+      .mission span {
+        font-size: 9px;
+        color: #6f8598;
+      }
+      .mission b {
+        font-size: 10px;
+      }
+      .robotBtns {
+        display: flex;
+        gap: 5px;
+        margin-top: 8px;
+      }
+      .robotBtns button {
+        flex: 1;
+        border: 0;
+        background: #fff;
+        border-radius: 10px;
+        font-family: inherit;
+        font-weight: 800;
+        font-size: 9px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px 2px;
+      }
+      .robotHint {
+        margin-top: 7px;
+        background: #fff6db;
+        border-radius: 10px;
+        padding: 6px;
+        font-size: 9px;
+      }
+      .brandBig,
+      .topbar h1,
+      .primary,
+      b,
+      strong {
+        letter-spacing: 0;
+      }
+      .mapHome,
+      .mapSchool {
+        font-size: 0;
+        width: 38px;
+        height: 38px;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      .mapHome {
+        background-image: url("../01_shared_assets/icon_home.png");
+      }
+      .mapSchool {
+        background-image: url("../01_shared_assets/icon_school.png");
+      }
+      .textBtn {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="screen welcome" id="welcomeScreen">
+      <img class="welcomeArt" src="01_shared_assets/hero_car.png" />
+      <div class="welcomeShade"></div>
+      <div class="welcomeCopy">
+        <img
+          class="logoIcon"
+          src="01_shared_assets/icon_logo_shield.png"
+          alt=""
+        />
+        <div class="brandBig">اطمّن</div>
+        <h1>رحلة طفلك… بأمان</h1>
+        <p>من الباب إلى الشخص الموثوق</p>
+        <button class="primary orange" data-nav="homeScreen">
+          ابدأ الآن
+          <img
+            class="tiny"
+            src="01_shared_assets/icon_forward.png"
+            alt=""
+          /></button
+        ><small>نموذج أولي لمسابقة DEMI</small>
+      </div>
+    </section>
+    <section class="screen" id="homeScreen">
+      <div class="topbar">
+        <span class="miniLogo">اطمّن</span>
+        <h1>مرحبًا يا ولي الأمر</h1>
+        <span class="spacer"></span>
+      </div>
+      <div class="content">
+        <div class="childCard">
+          <div class="avatar">ح</div>
+          <div><b>حذيفة محمود</b><span>الرحلة القادمة اليوم</span></div>
+          <img class="ico" src="01_shared_assets/icon_car.png" alt="" />
+        </div>
+        <div class="nextTrip">
+          <div class="routeLine">
+            <span class="dot homeDot"></span><b>المنزل</b
+            ><span class="line"></span><span class="dot schoolDot"></span
+            ><b>المدرسة</b>
+          </div>
+          <div class="tripMeta">
+            <span
+              ><img class="tiny" src="01_shared_assets/icon_clock.png" alt="" />
+              ٧:٣٠ ص</span
+            ><span
+              ><img class="tiny" src="01_shared_assets/icon_pin.png" alt="" />
+              مدينة نصر</span
+            >
+          </div>
+          <div class="safePill">السيارة والسائق موثّقان ✓</div>
+        </div>
+        <button class="primary" data-nav="bookScreen">
+          <img class="tiny" src="01_shared_assets/icon_booking.png" alt="" />
+          حجز رحلة جديدة</button
+        ><button class="secondary" data-nav="robotScreen">
+          <img class="tiny" src="01_shared_assets/icon_robot.png" alt="" />
+          تجربة النموذج الروبوتي
+        </button>
+        <div class="tip">رحلتك لا تنتهي إلا بعد تسليم الطفل لشخص معتمد.</div>
+      </div>
+      <div class="bottomNav">
+        <button data-nav="homeScreen" class="active">
+          <img class="ico" src="01_shared_assets/icon_home.png" alt="" /><span
+            >الرئيسية</span
+          ></button
+        ><button data-nav="bookScreen" class="">
+          <img
+            class="ico"
+            src="01_shared_assets/icon_booking.png"
+            alt=""
+          /><span>حجز</span></button
+        ><button data-nav="robotScreen" class="">
+          <img class="ico" src="01_shared_assets/icon_robot.png" alt="" /><span
+            >الروبوت</span
+          >
+        </button>
+      </div>
+    </section>
+    <section class="screen" id="bookScreen">
+      <div class="topbar">
+        <button class="iconBtn" data-nav="homeScreen">
+          <img class="ico" src="01_shared_assets/icon_back.png" alt="" />
+        </button>
+        <h1>حجز رحلة جديدة</h1>
+        <span class="spacer"></span>
+      </div>
+      <div class="content compact">
+        <label class="label">اختر الوجهة</label>
+        <div class="choices">
+          <button class="choice selected" data-place="المدرسة">
+            <img
+              class="ico"
+              src="01_shared_assets/icon_school.png"
+              alt=""
+            /><span>المدرسة</span></button
+          ><button class="choice" data-place="النادي">
+            <img class="ico" src="01_shared_assets/icon_club.png" alt="" /><span
+              >النادي</span
+            ></button
+          ><button class="choice" data-place="الكورس">
+            <img
+              class="ico"
+              src="01_shared_assets/icon_course.png"
+              alt=""
+            /><span>الكورس</span>
+          </button>
+        </div>
+        <label class="label">من سيستلم الطفل؟</label>
+        <div class="inputMock">
+          <img class="tiny" src="01_shared_assets/icon_receiver.png" alt="" />
+          <span id="receiverPreview">المعلمة منى</span>
+        </div>
+        <div class="switchRow">
+          <img class="ico" src="01_shared_assets/icon_group.png" alt="" />
+          <div><b>رحلة مشتركة</b><span>تقاسم الأجرة مع طفل آخر</span></div>
+          <div class="switch on"></div>
+        </div>
+        <div class="price">
+          <span>التكلفة المتوقعة</span><b><s>١٢٠ ج</s> ٦٠ ج</b>
+        </div>
+        <button class="primary" data-nav="confirmScreen">
+          متابعة
+          <img class="tiny" src="01_shared_assets/icon_forward.png" alt="" />
+        </button>
+      </div>
+      <div class="bottomNav">
+        <button data-nav="homeScreen" class="">
+          <img class="ico" src="01_shared_assets/icon_home.png" alt="" /><span
+            >الرئيسية</span
+          ></button
+        ><button data-nav="bookScreen" class="active">
+          <img
+            class="ico"
+            src="01_shared_assets/icon_booking.png"
+            alt=""
+          /><span>حجز</span></button
+        ><button data-nav="robotScreen" class="">
+          <img class="ico" src="01_shared_assets/icon_robot.png" alt="" /><span
+            >الروبوت</span
+          >
+        </button>
+      </div>
+    </section>
+    <section class="screen" id="confirmScreen">
+      <div class="topbar">
+        <button class="iconBtn" data-nav="homeScreen">
+          <img class="ico" src="01_shared_assets/icon_back.png" alt="" />
+        </button>
+        <h1>مراجعة الحجز</h1>
+        <span class="spacer"></span>
+      </div>
+      <div class="content compact">
+        <div class="summary">
+          <div>
+            <img class="ico" src="01_shared_assets/icon_pin.png" alt="" /><span
+              >من المنزل</span
+            ><b>إلى المدرسة</b>
+          </div>
+          <div>
+            <img
+              class="ico"
+              src="01_shared_assets/icon_receiver.png"
+              alt=""
+            /><span>المستلم</span><b>المعلمة منى</b>
+          </div>
+          <div>
+            <img
+              class="ico"
+              src="01_shared_assets/icon_group.png"
+              alt=""
+            /><span>نوع الرحلة</span><b>مشتركة — ٦٠ ج</b>
+          </div>
+        </div>
+        <label class="label">الأمان في الرحلة</label>
+        <ul class="safetyList">
+          <li>
+            <img class="tiny" src="01_shared_assets/icon_gps.png" alt="" /> تتبع
+            مباشر للموقع <b>✓</b>
+          </li>
+          <li>
+            <img class="tiny" src="01_shared_assets/icon_camera.png" alt="" />
+            كاميرا داخل السيارة <b>✓</b>
+          </li>
+          <li>
+            <img class="tiny" src="01_shared_assets/icon_otp.png" alt="" /> رمز
+            للصعود والتسليم <b>✓</b>
+          </li>
+        </ul>
+        <button class="primary green" data-nav="pickupScreen">
+          <img class="tiny" src="01_shared_assets/icon_check.png" alt="" />
+          تأكيد الحجز</button
+        ><button class="textBtn" data-nav="bookScreen">تعديل البيانات</button>
+      </div>
+    </section>
+    <section class="screen" id="pickupScreen">
+      <div class="topbar">
+        <button class="iconBtn" data-nav="homeScreen">
+          <img class="ico" src="01_shared_assets/icon_back.png" alt="" />
+        </button>
+        <h1>صعود الطفل بأمان</h1>
+        <span class="spacer"></span>
+      </div>
+      <div class="content compact center">
+        <div class="otpCard">
+          <img
+            class="bigIcon"
+            src="01_shared_assets/icon_otp.png"
+            alt=""
+          /><span>رمز صعود الطفل</span><strong>٤٨٢٧</strong
+          ><small>يُظهر للسائق فقط عند الوصول</small>
+        </div>
+        <div class="driverCard">
+          <img class="ico" src="01_shared_assets/icon_car.png" alt="" />
+          <div>
+            <b>السيارة: أ ب ج ١٢٣</b><span>السائق: أحمد — موثّق ✓</span>
+          </div>
+        </div>
+        <div class="arrived">السيارة وصلت أمام المنزل</div>
+        <button class="primary" data-nav="trackingScreen">
+          <img class="tiny" src="01_shared_assets/icon_play.png" alt="" /> بدأ
+          الطفل الرحلة
+        </button>
+      </div>
+    </section>
+    <section class="screen" id="trackingScreen">
+      <div class="topbar">
+        <button class="iconBtn" data-nav="homeScreen">
+          <img class="ico" src="01_shared_assets/icon_back.png" alt="" />
+        </button>
+        <h1>الرحلة الآن</h1>
+        <span class="spacer"></span>
+      </div>
+      <div class="content compact">
+        <div class="mapCard">
+          <div class="road road1"></div>
+          <div class="road road2"></div>
+          <span class="mapHome">🏠</span><span class="mapSchool">🏫</span
+          ><span class="carPin"
+            ><img class="ico" src="01_shared_assets/icon_car.png" alt=""
+          /></span>
+          <div class="routeDots"></div>
+        </div>
+        <div class="progressText">
+          <b>الطفل في الطريق إلى المدرسة</b><span>متبقي تقريبًا ١٢ دقيقة</span>
+        </div>
+        <div class="statusRow">
+          <div>
+            <img class="ico" src="01_shared_assets/icon_gps.png" alt="" /><span
+              >GPS</span
+            ><b>يعمل</b>
+          </div>
+          <div>
+            <img
+              class="ico"
+              src="01_shared_assets/icon_camera.png"
+              alt=""
+            /><span>الكاميرا</span><b>تعمل</b>
+          </div>
+          <div>
+            <img
+              class="ico"
+              src="01_shared_assets/icon_navigation.png"
+              alt=""
+            /><span>المسار</span><b>صحيح</b>
+          </div>
+        </div>
+        <button class="primary green" data-nav="handoffScreen">
+          وصلنا إلى الوجهة
+        </button>
+        <div class="actions">
+          <button class="secondary danger">
+            <img class="tiny" src="01_shared_assets/icon_phone.png" alt="" />
+            طوارئ</button
+          ><button class="secondary" data-nav="robotScreen">
+            <img class="tiny" src="01_shared_assets/icon_robot.png" alt="" />
+            الروبوت
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="screen" id="handoffScreen">
+      <div class="topbar">
+        <button class="iconBtn" data-nav="homeScreen">
+          <img class="ico" src="01_shared_assets/icon_back.png" alt="" />
+        </button>
+        <h1>تسليم الطفل</h1>
+        <span class="spacer"></span>
+      </div>
+      <div class="content compact center">
+        <img class="handoffArt" src="01_shared_assets/handoff_scene.png" />
+        <div class="receiverBox">
+          <img class="ico" src="01_shared_assets/icon_receiver.png" alt="" />
+          <div>
+            <span>المستلم المعتمد</span><b>المعلمة منى</b
+            ><small>داخل نطاق المدرسة ✓</small>
+          </div>
+        </div>
+        <label class="label full">أدخل رمز التسليم</label>
+        <div class="codeBoxes">
+          <span>٧</span><span>٣</span><span>١</span><span>٩</span>
+        </div>
+        <button class="primary green" data-nav="completeScreen">
+          <img class="tiny" src="01_shared_assets/icon_check.png" alt="" />
+          تأكيد التسليم
+        </button>
+      </div>
+    </section>
+    <section class="screen complete" id="completeScreen">
+      <div class="content center completeContent">
+        <img class="successIcon" src="01_shared_assets/icon_check.png" alt="" />
+        <h1>تمت الرحلة بأمان</h1>
+        <p>تم تسليم حذيفة إلى المعلمة منى</p>
+        <div class="receipt">
+          <div>
+            <img
+              class="tiny"
+              src="01_shared_assets/icon_clock.png"
+              alt=""
+            /><span>وقت التسليم</span><b>٨:٠٢ ص</b>
+          </div>
+          <div>
+            <img
+              class="tiny"
+              src="01_shared_assets/icon_receiver.png"
+              alt=""
+            /><span>المستلم</span><b>المعلمة منى</b>
+          </div>
+          <div>
+            <img
+              class="tiny"
+              src="01_shared_assets/icon_wallet.png"
+              alt=""
+            /><span>التكلفة</span><b>٦٠ جنيهًا</b>
+          </div>
+        </div>
+        <div class="proof">تم إرسال إثبات التسليم لولي الأمر ✓</div>
+        <button class="primary" data-nav="homeScreen">
+          <img class="tiny" src="01_shared_assets/icon_home.png" alt="" />
+          العودة للرئيسية
+        </button>
+      </div>
+    </section>
+    <section class="screen" id="robotScreen">
+      <div class="topbar">
+        <button class="iconBtn" data-nav="homeScreen">
+          <img class="ico" src="01_shared_assets/icon_back.png" alt="" />
+        </button>
+        <h1>النموذج الروبوتي</h1>
+        <span class="spacer"></span>
+      </div>
+      <div class="content compact center">
+        <img class="robotArt" src="01_shared_assets/robot_scene.png" />
+        <div class="robotStatus">
+          <span class="pulse"></span>
+          <div>
+            <b>السيارة الروبوت متصلة</b
+            ><small>ESP32 — جاهزة لتنفيذ المهمة</small>
+          </div>
+        </div>
+        <div class="mission">
+          <div><span>المهمة</span><b>تحرك إلى بوابة المدرسة</b></div>
+          <div><span>الحساس</span><b id="sensorState">لا يوجد عائق</b></div>
+        </div>
+        <button class="primary green" id="startRobot">
+          <img class="tiny" src="01_shared_assets/icon_play.png" alt="" /> بدء
+          المهمة
+        </button>
+        <div class="robotBtns">
+          <button>
+            <img class="tiny" src="01_shared_assets/icon_pause.png" alt="" />
+            توقف</button
+          ><button>
+            <img class="tiny" src="01_shared_assets/icon_reset.png" alt="" />
+            إعادة</button
+          ><button>
+            <img class="tiny" src="01_shared_assets/icon_obstacle.png" alt="" />
+            اختبار عائق
+          </button>
+        </div>
+        <div class="robotHint">
+          في العرض: يرسل التطبيق المهمة، تتحرك السيارة، وتتوقف تلقائيًا أمام
+          العائق.
+        </div>
+      </div>
+      <div class="bottomNav">
+        <button data-nav="homeScreen" class="">
+          <img class="ico" src="01_shared_assets/icon_home.png" alt="" /><span
+            >الرئيسية</span
+          ></button
+        ><button data-nav="bookScreen" class="">
+          <img
+            class="ico"
+            src="01_shared_assets/icon_booking.png"
+            alt=""
+          /><span>حجز</span></button
+        ><button data-nav="robotScreen" class="active">
+          <img class="ico" src="01_shared_assets/icon_robot.png" alt="" /><span
+            >الروبوت</span
+          >
+        </button>
+      </div>
+    </section>
+    <script>
+      const wanted =
+        new URLSearchParams(location.search).get("screen") || "welcomeScreen";
+      document
+        .querySelectorAll(".screen")
+        .forEach((s) => (s.style.display = s.id === wanted ? "block" : "none"));
+      document.querySelectorAll("[data-nav]").forEach(
+        (b) =>
+          (b.onclick = () => {
+            const id = b.dataset.nav;
+            document
+              .querySelectorAll(".screen")
+              .forEach(
+                (s) => (s.style.display = s.id === id ? "block" : "none"),
+              );
+            history.replaceState(null, "", "?screen=" + id);
+          }),
+      );
+      document.querySelectorAll("[data-place]").forEach(
+        (b) =>
+          (b.onclick = () => {
+            document
+              .querySelectorAll("[data-place]")
+              .forEach((x) => x.classList.remove("selected"));
+            b.classList.add("selected");
+          }),
+      );
+      const sr = document.getElementById("startRobot");
+      if (sr)
+        sr.onclick = () => {
+          document.getElementById("sensorState").textContent = "المهمة بدأت ✓";
+          sr.textContent = "السيارة تتحرك الآن";
+        };
+    </script>
+  </body>
+</html>
